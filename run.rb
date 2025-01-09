@@ -12,7 +12,7 @@ if validator.validate!
   calculator.print_cart
   puts ''
 
-  puts 'Your Output Cart:'
+  puts 'Your Output Summary:'
   calculator.print_receipt
 else
   puts validator.errors

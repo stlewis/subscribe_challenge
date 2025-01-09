@@ -65,7 +65,7 @@ class CartCalculator
   def calculate_taxes_and_duties(line_item)
     pennies = (line_item['price'].to_f * 100).round(2).to_i
 
-    calculated_tax = TAX_EXEMPT_CATEGORIES.include?(line_item['category']) ? 0 : calculate_tax(pennies, TAX_RATE)
+    calculated_tax = TAX_EXEMPT_CATEGORIES.include?(line_item['category'].downcase) ? 0 : calculate_tax(pennies, TAX_RATE)
     calculated_duty = line_item['imported'].to_s.downcase == 'true' ? calculate_tax(pennies, DUTY_RATE) : 0
 
     (calculated_tax * line_item['quantity']) + (calculated_duty * line_item['quantity'])
