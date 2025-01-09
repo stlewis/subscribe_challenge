@@ -1,0 +1,30 @@
+[
+  {
+    "quantity": 1,
+    "product": "bottle of perfume",
+    "category": "cosmetics",
+    "price": "27.99",
+    "imported": true
+  },
+  {
+    "quantity": 1,
+    "product": "bottle of perfume",
+    "category": "cosmetics",
+    "price": "18.99",
+    "imported": false
+  },
+  {
+    "quantity": 1,
+    "product": "packet of headache pills",
+    "category": "medical",
+    "price": "9.75",
+    "imported": false
+  },
+  {
+    "quantity": 3,
+    "product": "box of chocolate",
+    "category": "food",
+    "price": "11.25",
+    "imported": true
+  }
+]
